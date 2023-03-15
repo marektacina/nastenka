@@ -47,6 +47,7 @@ function vypisKurzyNBP() {
                 ` ${((mid.rates[0].mid).toString()).replace(".", ",")}`;
         });
     }
+
 }
 
 
@@ -55,7 +56,8 @@ function vypisPocasi(lat: number, lon: number, lokalita: string) {
     stahniJSON(url, (predpoved) => {
         let symboly = {'cloudy': '04', 'rain': '09', 'lightrain': '46', 'partlycloudy_night': '03n', 'heavyrain': '10',
         'heavysleet': '48', 'sleet': '12', 'lightsleet': '47', 'lightsnow': '49', 'fair_night': '01n', 'clearsky_day': '01d',
-        'clearsky_night': '01n', 'partlycloudy_day': '03d', 'fair_day': '02d', 'snow': '13', 'fog': '15'};
+        'clearsky_night': '01n', 'partlycloudy_day': '03d', 'fair_day': '02d', 'snow': '13', 'fog': '15',
+        'lightrainshowers_day' : '40d'};
 
         let containerPocasi = document.querySelector(`.${lokalita}`);
 
@@ -87,8 +89,9 @@ function vypisPocasi(lat: number, lon: number, lokalita: string) {
 
 vypisJmena();
 vypisKurzyNBP();
+vypisPocasi(49.6336822, 18.6824547, "pocasi-karpentna");
 vypisPocasi(51.0717922, 19.4338617, "pocasi-radomsko");
-vypisPocasi(49.6336822, 18.6824547, "pocasi-karpentna   ");
+
 // @ts-ignore
 // async function myDisplay(): Promise<void> {
 //     vypisPocasi(49.6336822, 18.6824547, "pocasi-radomsko");

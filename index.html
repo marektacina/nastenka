@@ -16,7 +16,7 @@
         <div class="row"> <!-- data-masonry='{"percentPosition": true }'-->
             <div class="col-lg-4 col-md-6 col-sm-12"> <!--col-* -->
                 <!--Týden-->
-                <div class="card border-secondary bg-light m-1">
+                <div id="karta-tyden" class="card border-secondary bg-light m-1">
                     <div class="card-body">
                         <h5 class="card-title">Týden</h5>
                         <div class="container">
@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12"><!--col-* -->
                 <!--Kurzy NBP -->
-                <div class="card border-secondary bg-light m-1">
+                <div id="karta-kurzy" class="card border-secondary bg-light m-1">
                     <div class="card-body">
                         <h5 class="card-title">Kurzy NBP</h5>
                         <div class="container">
@@ -78,367 +78,395 @@
                 <!--Počasí Karpentná -->
                 <div class="card border-secondary bg-light m-1">
                     <div class="card-body">
-                        <h5 class="card-title">Počasí Karpentná</h5>
-                        <div class="container pocasi-karpentna">
-                            <div class="row">
-                                <div class="col font-weight-bold">hod</div>
-                                <div class="col font-weight-bold"></div>
-                                <div class="col font-weight-bold">°C</div>
-                                <div class="col font-weight-bold">srážky</div>
-                                <div class="col font-weight-bold">vítr</div>
-                            </div>
-                            <div class="row radek1">
-                                <div class="col"> </div>
-                                <div class="col"> </div>
-                                <div class="col"> </div>
-                                <div class="col"> </div>
-                                <div class="col"> </div>
-                            </div>
-                            <div class="row radek2">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek3">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                             </div>
-                            <div class="row radek4">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek5">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek6">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek7">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek8">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek9">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek10">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek11">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek12">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek13">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek14">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek15">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek16">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek17">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek18">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek19">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek20">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek21">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek22">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek23">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek24">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h5 class="card-title">Počasí Karpentná</h5>
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                            <div class="container pocasi-karpentna">
+                                                <div class="row">
+                                                    <div class="col font-weight-bold">hod</div>
+                                                    <div class="col font-weight-bold"></div>
+                                                    <div class="col font-weight-bold">°C</div>
+                                                    <div class="col font-weight-bold">srážky</div>
+                                                    <div class="col font-weight-bold">vítr</div>
+                                                </div>
+                                                <div class="row radek1">
+                                                    <div class="col"> </div>
+                                                    <div class="col"> </div>
+                                                    <div class="col"> </div>
+                                                    <div class="col"> </div>
+                                                    <div class="col"> </div>
+                                                </div>
+                                                <div class="row radek2">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek3">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                 </div>
+                                                <div class="row radek4">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek5">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek6">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek7">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek8">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek9">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek10">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek11">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek12">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek13">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek14">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek15">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek16">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek17">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek18">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek19">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek20">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek21">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek22">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek23">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                                <div class="row radek24">
+                                                    <div class="col"> </div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                    <div class="col"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12"><!--col-* -->
-                <!--Počasí Radomsko -->
+                <!--Počasí Karpentná -->
                 <div class="card border-secondary bg-light m-1">
                     <div class="card-body">
-                        <h5 class="card-title">Počasí Radomsko</h5>
-                        <div class="container pocasi-radomsko">
-                            <div class="row">
-                                <div class="col font-weight-bold">hod</div>
-                                <div class="col font-weight-bold"></div>
-                                <div class="col font-weight-bold">°C</div>
-                                <div class="col font-weight-bold">srážky</div>
-                                <div class="col font-weight-bold">vítr</div>
-                            </div>
-                            <div class="row radek1">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek2">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek3">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek4">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek5">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek6">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek7">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek8">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek9">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek10">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek11">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek12">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek13">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek14">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek15">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek16">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek17">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek18">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek19">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek20">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek21">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek22">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek23">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                            </div>
-                            <div class="row radek24">
-                                <div class="col"> </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
+                        <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        <h5 class="card-title">Počasí Radomsko</h5>
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse  "
+                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <div class="container pocasi-radomsko">
+                                            <div class="row">
+                                                <div class="col font-weight-bold">hod</div>
+                                                <div class="col font-weight-bold"></div>
+                                                <div class="col font-weight-bold">°C</div>
+                                                <div class="col font-weight-bold">srážky</div>
+                                                <div class="col font-weight-bold">vítr</div>
+                                            </div>
+                                            <div class="row radek1">
+                                                <div class="col"> </div>
+                                                <div class="col"> </div>
+                                                <div class="col"> </div>
+                                                <div class="col"> </div>
+                                                <div class="col"> </div>
+                                            </div>
+                                            <div class="row radek2">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek3">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek4">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek5">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek6">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek7">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek8">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek9">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek10">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek11">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek12">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek13">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek14">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek15">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek16">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek17">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek18">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek19">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek20">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek21">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek22">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek23">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                            <div class="row radek24">
+                                                <div class="col"> </div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
