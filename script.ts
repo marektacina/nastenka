@@ -22,7 +22,7 @@ function vypisJmena() {
         denVTydnu = aktualniDen.getDay() - 1;
         denVTydnu = (denVTydnu == -1 ? 6 : denVTydnu); // pro nedeli zmeni z 0 na 6
         aktualniDen.setDate(aktualniDen.getDate() - denVTydnu + i); // dny  v aktualnim tydnu po-ne
-        dnyVTydnuVypis[i].innerHTML = `${dnyVTydnu[aktualniDen.getDay()]} ${aktualniDen.getDate()}.${aktualniDen.getMonth()}.  `
+        dnyVTydnuVypis[i].innerHTML = `${dnyVTydnu[aktualniDen.getDay()]} ${aktualniDen.getDate()}.${aktualniDen.getMonth() + 1}.  `
     }
 
     let pondeli: Date = new Date();
@@ -33,7 +33,6 @@ function vypisJmena() {
     stahniJSON(url, (mid) => {
         for (let j = 0; j < 7; j++) {
             svatkyVypis[j].innerHTML = mid[j].name;
-
         }
     });
 }
@@ -57,7 +56,9 @@ function vypisPocasi(lat: number, lon: number, lokalita: string) {
         let symboly = {'cloudy': '04', 'rain': '09', 'lightrain': '46', 'partlycloudy_night': '03n', 'heavyrain': '10',
         'heavysleet': '48', 'sleet': '12', 'lightsleet': '47', 'lightsnow': '49', 'fair_night': '01n', 'clearsky_day': '01d',
         'clearsky_night': '01n', 'partlycloudy_day': '03d', 'fair_day': '02d', 'snow': '13', 'fog': '15',
-        'lightrainshowers_day' : '40d'};
+        'lightrainshowers_day' : '40d', 'rainshowers_day' : '05d', 'heavysnow' : '50', 'snowshowers_night' : '08n',
+            'snowshowers_day' : '08d', 'lightsnowshowers_day': '44d', 'lightsleetshowers_day': '44d', 'lightsnowshowers_night': '44n'
+        };
 
         let containerPocasi = document.querySelector(`.${lokalita}`);
 
@@ -75,7 +76,7 @@ function vypisPocasi(lat: number, lon: number, lokalita: string) {
             let vitr = Math.round(Number(predpoved.properties.timeseries[i - 1].data.instant.details.wind_speed));
 
             sloupcePredpovedi[0].innerHTML = `${cas}`;
-            console.log(predpoved.properties.timeseries[i - 1].data.next_1_hours.summary.symbol_code);
+            console.log(`${cas} ${predpoved.properties.timeseries[i - 1].data.next_1_hours.summary.symbol_code}`);
             let urlObrazku = `https://www.yr.no/assets/images/weather-symbols/light-mode/default/svg/${symboly[predpoved.properties.timeseries[i - 1].data.next_1_hours.summary.symbol_code]}.svg`
             sloupcePredpovedi[1].innerHTML = `<img src="${urlObrazku}" style="width: 60%">`;
             sloupcePredpovedi[2].innerHTML = `${teplota}`;
